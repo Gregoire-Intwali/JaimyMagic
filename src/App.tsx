@@ -1,0 +1,39 @@
+
+import { Toaster } from "@/components/ui/toaster";
+import { Toaster as Sonner } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./pages/Index";
+import CloseUpMagic from "./pages/CloseUpMagic";
+import ParlourMagic from "./pages/ParlourMagic";
+import Booking from "./pages/Booking";
+import AceOfSpades from "./pages/AceOfSpades";
+import About from "./pages/About";
+import Gallery from "./pages/Gallery";
+import NotFound from "./pages/NotFound";
+
+const queryClient = new QueryClient();
+
+const App = () => (
+  <QueryClientProvider client={queryClient}>
+    <TooltipProvider>
+      <Toaster />
+      <Sonner />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/close-up-magic" element={<CloseUpMagic />} />
+          <Route path="/parlour-magic" element={<ParlourMagic />} />
+          <Route path="/booking" element={<Booking />} />
+          <Route path="/ace-of-spades" element={<AceOfSpades />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </BrowserRouter>
+    </TooltipProvider>
+  </QueryClientProvider>
+);
+
+export default App;
