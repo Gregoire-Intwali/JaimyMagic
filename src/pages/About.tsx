@@ -37,17 +37,18 @@ const About = () => {
               <h2 className="text-3xl font-bold text-[#5E112C] mb-6">Mijn Reis in de Magie</h2>
               <div className="space-y-4 text-[#5E112C]/80">
                 <p>
-                  Magie is al meer dan 15 jaar mijn passie. Wat begon als nieuwsgierigheid naar een simpele kaarttruc 
-                  is uitgegroeid tot een levenslange toewijding aan de kunst van verwondering en mysterie.
-                </p>
-                <p>
-                  Ik specialiseer me in close-up magie en salon voorstellingen, waarbij ik het onmogelijke direct 
-                  naar uw gasten breng. Elke show is zorgvuldig samengesteld om echte momenten van verbazing en vreugde 
-                  te creëren die uw publiek voor altijd zal onthouden.
-                </p>
-                <p>
-                  Mijn aanpak combineert klassieke magische principes met moderne presentatie, waardoor elke voorstelling 
-                  zowel tijdloos als eigentijds aanvoelt.
+               Het Magische Begin van Jaimy
+               </p>
+               <p>
+Toen Jaimy negen jaar oud was, kreeg hij zijn eerste goocheldoos. Het was
+een klein, onschuldig doosje, maar voor Jaimy was het de sleutel naar een
+magische wereld. Met elke truc die hij leerde, groeide zijn fascinatie voor
+magie. Wat begon als een hobby, werd al snel een passie. Jaimy oefende
+elke dag, zijn ogen glinsterend van opwinding bij het ontdekken van nieuwe
+geheimen. Nu, jaren later, deelt hij zijn magie met anderen, betoverend
+publiek en hen meenemend op een avontuur vol verwondering en verbazing.
+Magic Jaimy tovert niet alleen kaarten en muntjes, maar ook glimlachen en
+verwonderde blikken.
                 </p>
               </div>
             </div>

@@ -146,7 +146,7 @@ const CloseUpMagic = () => {
               <Link to="/booking">Boek Nu</Link>
             </Button>
             <Button asChild variant="outline" size="lg" className="border-[#5E112C] text-[#5E112C] hover:bg-[#5E112C] hover:text-[#FEFCF8] px-8 py-3 text-lg">
-              <Link to="/parlour-magic">Bekijk Salon Magie</Link>
+              <Link to="/parlour-magic">Bekijk Parlour Magie</Link>
             </Button>
           </div>
         </div>

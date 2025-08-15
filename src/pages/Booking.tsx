@@ -257,14 +257,14 @@ const Booking = () => {
                   <Mail className="h-12 w-12 text-[#5E112C]" />
                   <div>
                     <h3 className="text-[#5E112C] font-semibold">E-mail</h3>
-                    <p className="text-[#5E112C]/80">magic@magicjaimy.nl</p>
+                    <p className="text-[#5E112C]/80">jaimypynenborg@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex flex-col items-center space-y-3">
                   <Phone className="h-12 w-12 text-[#5E112C]" />
                   <div>
                     <h3 className="text-[#5E112C] font-semibold">Telefoon</h3>
-                    <p className="text-[#5E112C]/80">(06) 123-MAGIE</p>
+                    <p className="text-[#5E112C]/80">0470432768</p>
                   </div>
                 </div>
                 <div className="flex flex-col items-center space-y-3">

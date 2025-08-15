@@ -11,13 +11,17 @@ const ParlourMagic = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
+      <section className="relative py-20 px-4 text-center">
+        <div className="absolute inset-0">
+          <div className="w-full h-full bg-[url('/gallery/parlourmagie.jpeg')] bg-cover bg-center"></div>
+          <div className="absolute inset-0 w-full h-full bg-black/70"></div>
+        </div>
+        <div className="relative max-w-4xl mx-auto">
           <Home className="h-16 w-16 text-[#5E112C] mx-auto mb-6 animate-pulse" />
-          <h1 className="text-5xl md:text-6xl font-bold text-[#5E112C] mb-6">
-            Salon Magie
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
+            Parlour Magie
           </h1>
-          <p className="text-xl text-[#5E112C]/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
             Klassieke podium magie uitgevoerd voor zittend publiek. 
             Perfect voor intieme locaties en privé bijeenkomsten tot 50 personen.
           </p>
@@ -169,7 +173,7 @@ const ParlourMagic = () => {
             Klaar Voor Een Magische Show?
           </h2>
           <p className="text-xl text-[#5E112C]/80 mb-8">
-            Transformeer uw bijeenkomst in een onvergetelijke ervaring met klassieke salon magie
+            Transformeer uw bijeenkomst in een onvergetelijke ervaring met klassieke parlour magie
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-[#5E112C] hover:bg-[#3D0B1C] text-[#FEFCF8] font-bold px-8 py-3 text-lg">

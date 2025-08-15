@@ -25,7 +25,7 @@ const Index = () => {
               <span className="text-white"> Magie</span>
             </h1>
             <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
-              Professionele close-up en salon goochel voorstellingen die uw gasten betoveren
+              Professionele close-up en parlour goochel voorstellingen die uw gasten betoveren
             </p>
           </div>
           
@@ -70,7 +70,7 @@ const Index = () => {
             <Card className="bg-[#FEFCF8] border-[#5E112C]/30 hover:border-[#5E112C]/60 transition-all duration-300 group shadow-lg">
               <CardHeader>
                 <Home className="h-12 w-12 text-[#5E112C] mb-4 group-hover:scale-110 transition-transform" />
-                <CardTitle className="text-2xl text-[#5E112C]">Salon Magie</CardTitle>
+                <CardTitle className="text-2xl text-[#5E112C]">Parlour Magie</CardTitle>
                 <CardDescription className="text-[#5E112C]/70 text-lg">
                   Podium magie voor zittend publiek tot 50 personen
                 </CardDescription>

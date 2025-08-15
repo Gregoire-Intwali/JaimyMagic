@@ -11,13 +11,14 @@ const Gallery = () => {
       type: "image",
       title: "Close-up Kaarttruc",
       description: "Een verbazingwekkende kaarttruc van dichtbij",
-      category: "Close-up Magie"
+      category: "Close-up Magie",
+      src: "/gallery/parlourmagie.jpeg"
     },
     {
       type: "video", 
-      title: "Salon Magie Voorstelling",
-      description: "Een complete salon magie show",
-      category: "Salon Magie"
+      title: "Parlour Magie Voorstelling",
+      description: "Een complete parlour magie show",
+      category: "Parlour Magie"
     },
     {
       type: "image",
@@ -36,13 +37,14 @@ const Gallery = () => {
       type: "image",
       title: "Privéfeest",
       description: "Magische momenten op een privéfeest",
-      category: "Evenementen"
+      category: "Evenementen",
+      src: "/gallery/privefeest.jpeg"
     },
     {
       type: "video",
       title: "Klassieke Illusies",
       description: "Tijdloze magische illusies",
-      category: "Salon Magie"
+      category: "Parlour Magie"
     }
   ];
 
@@ -125,7 +127,7 @@ const Gallery = () => {
                   ))}
                 </div>
                 <p className="text-[#5E112C]/80 mb-4 italic">
-                  "De salon magie show was fenomenaal! Zowel kinderen als volwassenen waren volledig geboeid. Professioneel en echt magisch!"
+                  "De parlour magie show was fenomenaal! Zowel kinderen als volwassenen waren volledig geboeid. Professioneel en echt magisch!"
                 </p>
                 <div className="text-[#5E112C] font-semibold">Michael Janssen - Verjaardagsfeest</div>
               </CardContent>

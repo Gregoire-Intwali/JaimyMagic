@@ -12,7 +12,7 @@ const Navigation = () => {
   const navItems = [
     { path: "/", label: "Home" },
     { path: "/close-up-magic", label: "Close-up Magie" },
-    { path: "/parlour-magic", label: "Salon Magie" },
+    { path: "/parlour-magic", label: "Parlour Magie" },
     { path: "/gallery", label: "Galerij" },
     { path: "/booking", label: "Boeken" },
     { path: "/about", label: "Over Ons" },
