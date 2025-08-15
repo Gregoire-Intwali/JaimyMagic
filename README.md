@@ -1,1 +1,1 @@
-Welkom bij de magic zijn booking website
+Welkom bij Jaimy zijn magie booking website
