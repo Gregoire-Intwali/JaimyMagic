@@ -12,9 +12,9 @@ const AceOfSpades = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#5E112C] flex items-center justify-center p-4 overflow-hidden">
+    <div className="min-h-screen bg-[#2E2F38] flex items-center justify-center p-4 overflow-hidden">
       {/* Subtle background animation */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#5E112C] via-[#3D0B1C]/30 to-[#5E112C] opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#2E2F38] via-[#101013]/30 to-[#2E2F38] opacity-50"></div>
       
       {/* Card container */}
       <div 
@@ -32,19 +32,19 @@ const AceOfSpades = () => {
           
           {/* Top left spade and A */}
           <div className="absolute top-4 left-4 flex flex-col items-center">
-            <div className="text-4xl font-bold text-[#5E112C] mb-1">A</div>
-            <div className="text-4xl text-[#5E112C]">♠</div>
+            <div className="text-4xl font-bold text-[#2E2F38] mb-1">A</div>
+            <div className="text-4xl text-[#2E2F38]">♠</div>
           </div>
           
           {/* Center large spade */}
           <div className="flex-1 flex items-center justify-center">
-            <div className="text-[12rem] text-[#5E112C] leading-none select-none">♠</div>
+            <div className="text-[12rem] text-[#2E2F38] leading-none select-none">♠</div>
           </div>
           
           {/* Bottom right spade and A (upside down) */}
           <div className="absolute bottom-4 right-4 flex flex-col items-center rotate-180">
-            <div className="text-4xl font-bold text-[#5E112C] mb-1">A</div>
-            <div className="text-4xl text-[#5E112C]">♠</div>
+            <div className="text-4xl font-bold text-[#2E2F38] mb-1">A</div>
+            <div className="text-4xl text-[#2E2F38]">♠</div>
           </div>
           
           {/* Subtle shine effect */}
