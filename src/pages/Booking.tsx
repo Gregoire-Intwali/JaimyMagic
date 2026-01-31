@@ -97,13 +97,17 @@ const Booking = () => {
       <Navigation />
       
       {/* Header Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <Calendar className="h-16 w-16 text-[#4E4F51] mx-auto mb-6 animate-pulse" />
-          <h1 className="text-5xl md:text-6xl font-bold text-[#4E4F51] mb-6">
+      <section className="relative py-20 px-4 text-center">
+        <div className="absolute inset-0">
+          <div className="w-full h-full bg-[url('/gallery/booknu.jpeg')] bg-cover bg-center md:bg-top"></div>
+          <div className="absolute inset-0 w-full h-full bg-black/60"></div>
+        </div>
+        <div className="relative max-w-4xl mx-auto">
+          <Calendar className="h-16 w-16 text-[white] mx-auto mb-6 animate-pulse" />
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Boek Uw Magie Show
           </h1>
-          <p className="text-xl text-[#4E4F51]/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Klaar om een onvergetelijke ervaring te creëren? Vul het formulier hieronder in en laten we magie naar uw evenement brengen!
           </p>
         </div>

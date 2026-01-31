@@ -15,7 +15,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="relative mb-8">
             <div className="w-32 h-32 mx-auto bg-gradient-to-br from-[#4E4F51] to-[#101013] rounded-full flex items-center justify-center mb-6">
-              <Sparkles className="h-16 w-16 text-[white]" />
+              <img src="/gallery/logo.png" alt="Magic Jaimy Logo" className="h-35 w-35" />
             </div>
             <div className="absolute inset-0 bg-gradient-to-br from-[#4E4F51]/20 to-[#101013]/20 rounded-full blur-xl scale-150"></div>
           </div>

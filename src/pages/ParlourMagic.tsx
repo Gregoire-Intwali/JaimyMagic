@@ -13,7 +13,7 @@ const ParlourMagic = () => {
       {/* Hero Section */}
       <section className="relative py-20 px-4 text-center">
         <div className="absolute inset-0">
-          <div className="w-full h-full bg-[url('/gallery/parlourmagie.jpeg')] bg-cover bg-center"></div>
+          <div className="w-full h-full bg-[url('/gallery/chairflied.jpeg')] bg-cover bg-center"></div>
           <div className="absolute inset-0 w-full h-full bg-black/70"></div>
         </div>
         <div className="relative max-w-4xl mx-auto">

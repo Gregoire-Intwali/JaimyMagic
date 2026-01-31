@@ -35,20 +35,23 @@ const Gallery = () => {
       type: "video",
       title: "Mentale Magie",
       description: "Ongelooflijke mentale kunsten",
-      category: "Close-up Magie"
+      category: "Close-up Magie",
+      src: "/gallery/crazytrick.mp4"
+
     },
     {
-      type: "image",
+      type: "video",
       title: "Privéfeest",
       description: "Magische momenten op een privéfeest",
       category: "Evenementen",
-      src: "/gallery/privefeest.jpeg"
+      src: "/gallery/firebook.mp4"
     },
     {
       type: "video",
       title: "Klassieke Illusies",
       description: "Tijdloze magische illusies",
-      category: "Parlour Magie"
+      category: "Parlour Magie",
+      src:"/gallery/penthroughcard.mp4"
     }
   ];
 
@@ -57,15 +60,17 @@ const Gallery = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 px-4">
-        
-        <div className="max-w-4xl mx-auto text-center">
-          
-          <Camera className="h-16 w-16 text-[#4E4F51] mx-auto mb-6 animate-pulse" />
-          <h1 className="text-5xl md:text-6xl font-bold text-[#4E4F51] mb-6">
+      <section className="relative py-20 px-4 text-center">
+        <div className="absolute inset-0">
+          <div className="w-full h-full bg-[url('/gallery/gallerij.jpeg')] bg-cover bg-center"></div>
+          <div className="absolute inset-0 w-full h-full bg-black/60"></div>
+        </div>
+        <div className="relative max-w-4xl mx-auto">
+          <Camera className="h-16 w-16 text-[white] mx-auto mb-6 animate-pulse" />
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Galerij
           </h1>
-          <p className="text-xl text-[#4E4F51]/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
             Bekijk hoogtepunten van onze magische voorstellingen en ervaar de verwondering die we creëren
           </p>
         </div>
