@@ -12,9 +12,9 @@ const AceOfSpades = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#2E2F38] flex items-center justify-center p-4 overflow-hidden">
+    <div className="min-h-screen bg-[#4E4F51] flex items-center justify-center p-4 overflow-hidden">
       {/* Subtle background animation */}
-      <div className="absolute inset-0 bg-gradient-to-br from-[#2E2F38] via-[#101013]/30 to-[#2E2F38] opacity-50"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#4E4F51] via-[#101013]/30 to-[#4E4F51] opacity-50"></div>
       
       {/* Card container */}
       <div 
@@ -25,26 +25,26 @@ const AceOfSpades = () => {
         }`}
       >
         {/* Glow effect */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#FEFCF8]/20 to-[#F5F1EB]/20 rounded-3xl blur-2xl scale-110"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[white]/20 to-[#E3E5E6]/20 rounded-3xl blur-2xl scale-110"></div>
         
         {/* Main card */}
-        <div className="relative w-80 h-[500px] bg-[#FEFCF8] rounded-3xl shadow-2xl flex flex-col items-center justify-between p-8 border-4 border-[#F5F1EB]">
+        <div className="relative w-80 h-[500px] bg-[white] rounded-3xl shadow-2xl flex flex-col items-center justify-between p-8 border-4 border-[#E3E5E6]">
           
           {/* Top left spade and A */}
           <div className="absolute top-4 left-4 flex flex-col items-center">
-            <div className="text-4xl font-bold text-[#2E2F38] mb-1">A</div>
-            <div className="text-4xl text-[#2E2F38]">♠</div>
+            <div className="text-4xl font-bold text-[#4E4F51] mb-1">A</div>
+            <div className="text-4xl text-[#4E4F51]">♠</div>
           </div>
           
           {/* Center large spade */}
           <div className="flex-1 flex items-center justify-center">
-            <div className="text-[12rem] text-[#2E2F38] leading-none select-none">♠</div>
+            <div className="text-[12rem] text-[#4E4F51] leading-none select-none">♠</div>
           </div>
           
           {/* Bottom right spade and A (upside down) */}
           <div className="absolute bottom-4 right-4 flex flex-col items-center rotate-180">
-            <div className="text-4xl font-bold text-[#2E2F38] mb-1">A</div>
-            <div className="text-4xl text-[#2E2F38]">♠</div>
+            <div className="text-4xl font-bold text-[#4E4F51] mb-1">A</div>
+            <div className="text-4xl text-[#4E4F51]">♠</div>
           </div>
           
           {/* Subtle shine effect */}
@@ -57,7 +57,7 @@ const AceOfSpades = () => {
         {[...Array(20)].map((_, i) => (
           <div
             key={i}
-            className="absolute w-1 h-1 bg-[#FEFCF8] rounded-full opacity-30 animate-pulse"
+            className="absolute w-1 h-1 bg-[white] rounded-full opacity-30 animate-pulse"
             style={{
               left: `${Math.random() * 100}%`,
               top: `${Math.random() * 100}%`,

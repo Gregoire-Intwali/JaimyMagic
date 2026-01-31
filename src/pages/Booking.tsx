@@ -93,17 +93,17 @@ const Booking = () => {
 };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F5F1EB] via-[#F5F1EB] to-[#E8DDD4]">
+    <div className="min-h-screen bg-gradient-to-br from-[#E3E5E6] via-[#E3E5E6] to-[#E2E3E5]">
       <Navigation />
       
       {/* Header Section */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <Calendar className="h-16 w-16 text-[#2E2F38] mx-auto mb-6 animate-pulse" />
-          <h1 className="text-5xl md:text-6xl font-bold text-[#2E2F38] mb-6">
+          <Calendar className="h-16 w-16 text-[#4E4F51] mx-auto mb-6 animate-pulse" />
+          <h1 className="text-5xl md:text-6xl font-bold text-[#4E4F51] mb-6">
             Boek Uw Magie Show
           </h1>
-          <p className="text-xl text-[#2E2F38]/80 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-[#4E4F51]/80 mb-8 max-w-2xl mx-auto">
             Klaar om een onvergetelijke ervaring te creëren? Vul het formulier hieronder in en laten we magie naar uw evenement brengen!
           </p>
         </div>
@@ -112,10 +112,10 @@ const Booking = () => {
       {/* Booking Form */}
       <section className="py-8 px-4">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-[#FEFCF8] border-[#2E2F38]/30">
+          <Card className="bg-[white] border-[#4E4F51]/30">
             <CardHeader>
-              <CardTitle className="text-2xl text-[#2E2F38]">Evenement Details</CardTitle>
-              <CardDescription className="text-[#2E2F38]/80">
+              <CardTitle className="text-2xl text-[#4E4F51]">Evenement Details</CardTitle>
+              <CardDescription className="text-[#4E4F51]/80">
                 Vertel me over uw evenement zodat ik de perfecte magische ervaring kan creëren
               </CardDescription>
             </CardHeader>
@@ -124,18 +124,18 @@ const Booking = () => {
                 {/* Personal Information */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name" className="text-[#2E2F38]">Volledige Naam *</Label>
+                    <Label htmlFor="name" className="text-[#4E4F51]">Volledige Naam *</Label>
                     <Input
                       id="name"
                       name="name"
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="bg-[#F5F1EB] border-[#2E2F38]/30 text-[#2E2F38] focus:border-[#2E2F38]"
+                      className="bg-[#E3E5E6] border-[#4E4F51]/30 text-[#4E4F51] focus:border-[#4E4F51]"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="email" className="text-[#2E2F38]">E-mailadres *</Label>
+                    <Label htmlFor="email" className="text-[#4E4F51]">E-mailadres *</Label>
                     <Input
                       id="email"
                       name="email"
@@ -143,24 +143,24 @@ const Booking = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="bg-[#F5F1EB] border-[#2E2F38]/30 text-[#2E2F38] focus:border-[#2E2F38]"
+                      className="bg-[#E3E5E6] border-[#4E4F51]/30 text-[#4E4F51] focus:border-[#4E4F51]"
                     />
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-[#2E2F38]">Telefoonnummer</Label>
+                    <Label htmlFor="phone" className="text-[#4E4F51]">Telefoonnummer</Label>
                     <Input
                       id="phone"
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="bg-[#F5F1EB] border-[#2E2F38]/30 text-[#2E2F38] focus:border-[#2E2F38]"
+                      className="bg-[#E3E5E6] border-[#4E4F51]/30 text-[#4E4F51] focus:border-[#4E4F51]"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="venue" className="text-[#2E2F38]">Evenement Locatie *</Label>
+                    <Label htmlFor="venue" className="text-[#4E4F51]">Evenement Locatie *</Label>
                     <Input
                       id="venue"
                       name="venue"
@@ -168,7 +168,7 @@ const Booking = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="Stad, Provincie of Locatie Naam"
-                      className="bg-[#F5F1EB] border-[#2E2F38]/30 text-[#2E2F38] focus:border-[#2E2F38]"
+                      className="bg-[#E3E5E6] border-[#4E4F51]/30 text-[#4E4F51] focus:border-[#4E4F51]"
                     />
                   </div>
                 </div>
@@ -176,7 +176,7 @@ const Booking = () => {
                 {/* Event Information */}
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="eventDate" className="text-[#2E2F38]">Evenement Datum *</Label>
+                    <Label htmlFor="eventDate" className="text-[#4E4F51]">Evenement Datum *</Label>
                     <Input
                       id="eventDate"
                       name="eventDate"
@@ -184,30 +184,30 @@ const Booking = () => {
                       value={formData.eventDate}
                       onChange={handleInputChange}
                       required
-                      className="bg-[#F5F1EB] border-[#2E2F38]/30 text-[#2E2F38] focus:border-[#2E2F38]"
+                      className="bg-[#E3E5E6] border-[#4E4F51]/30 text-[#4E4F51] focus:border-[#4E4F51]"
                     />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="eventTime" className="text-[#2E2F38]">Gewenste Tijd</Label>
+                    <Label htmlFor="eventTime" className="text-[#4E4F51]">Gewenste Tijd</Label>
                     <Input
                       id="eventTime"
                       name="eventTime"
                       type="time"
                       value={formData.eventTime}
                       onChange={handleInputChange}
-                      className="bg-[#F5F1EB] border-[#2E2F38]/30 text-[#2E2F38] focus:border-[#2E2F38]"
+                      className="bg-[#E3E5E6] border-[#4E4F51]/30 text-[#4E4F51] focus:border-[#4E4F51]"
                     />
                   </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="magicType" className="text-[#2E2F38]">Type Magie *</Label>
+                    <Label htmlFor="magicType" className="text-[#4E4F51]">Type Magie *</Label>
                     <Select onValueChange={(value) => handleSelectChange("magicType", value)}>
-                      <SelectTrigger className="bg-[#F5F1EB] border-[#2E2F38]/30 text-[#2E2F38] focus:border-[#2E2F38]">
+                      <SelectTrigger className="bg-[#E3E5E6] border-[#4E4F51]/30 text-[#4E4F51] focus:border-[#4E4F51]">
                         <SelectValue placeholder="Selecteer magie type" />
                       </SelectTrigger>
-                      <SelectContent className="bg-[#FEFCF8] border-[#2E2F38]/30">
+                      <SelectContent className="bg-[white] border-[#4E4F51]/30">
                         <SelectItem value="close-up">Close-up Magie</SelectItem>
                         <SelectItem value="parlour">Parlour Magie</SelectItem>
                         <SelectItem value="both">Beide (indien tijd toelaat)</SelectItem>
@@ -216,7 +216,7 @@ const Booking = () => {
                     </Select>
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="guestCount" className="text-[#2E2F38]">Aantal Gasten *</Label>
+                    <Label htmlFor="guestCount" className="text-[#4E4F51]">Aantal Gasten *</Label>
                     <Input
                       id="guestCount"
                       name="guestCount"
@@ -225,18 +225,18 @@ const Booking = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="Geschat aantal"
-                      className="bg-[#F5F1EB] border-[#2E2F38]/30 text-[#2E2F38] focus:border-[#2E2F38]"
+                      className="bg-[#E3E5E6] border-[#4E4F51]/30 text-[#4E4F51] focus:border-[#4E4F51]"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="eventType" className="text-[#2E2F38]">Evenement Type</Label>
+                  <Label htmlFor="eventType" className="text-[#4E4F51]">Evenement Type</Label>
                   <Select onValueChange={(value) => handleSelectChange("eventType", value)}>
-                    <SelectTrigger className="bg-[#F5F1EB] border-[#2E2F38]/30 text-[#2E2F38] focus:border-[#2E2F38]">
+                    <SelectTrigger className="bg-[#E3E5E6] border-[#4E4F51]/30 text-[#4E4F51] focus:border-[#4E4F51]">
                       <SelectValue placeholder="Selecteer evenement type" />
                     </SelectTrigger>
-                    <SelectContent className="bg-[#FEFCF8] border-[#2E2F38]/30">
+                    <SelectContent className="bg-[white] border-[#4E4F51]/30">
                       <SelectItem value="corporate">Bedrijfsevenement</SelectItem>
                       <SelectItem value="birthday">Verjaardagsfeest</SelectItem>
                       <SelectItem value="wedding">Bruiloft/Receptie</SelectItem>
@@ -248,21 +248,21 @@ const Booking = () => {
                 </div>
 
                 <div className="space-y-2">
-                  <Label htmlFor="message" className="text-[#2E2F38]">Aanvullende Details</Label>
+                  <Label htmlFor="message" className="text-[#4E4F51]">Aanvullende Details</Label>
                   <Textarea
                     id="message"
                     name="message"
                     value={formData.message}
                     onChange={handleInputChange}
                     placeholder="Vertel me meer over uw evenement, speciale wensen, of eventuele vragen die u heeft..."
-                    className="bg-[#F5F1EB] border-[#2E2F38]/30 text-[#2E2F38] focus:border-[#2E2F38] min-h-[120px]"
+                    className="bg-[#E3E5E6] border-[#4E4F51]/30 text-[#4E4F51] focus:border-[#4E4F51] min-h-[120px]"
                   />
                 </div>
 
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-[#2E2F38] hover:bg-[#101013] text-[#FEFCF8] font-bold py-3 text-lg"
+                  className="w-full bg-[#4E4F51] hover:bg-[#101013] text-[white] font-bold py-3 text-lg"
                 >
                   Boekingsaanvraag Versturen
                 </Button>
@@ -275,34 +275,34 @@ const Booking = () => {
       {/* Contact Info */}
       <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto">
-          <Card className="bg-gradient-to-br from-[#2E2F38]/10 to-[#101013]/10 border-[#2E2F38]/30">
+          <Card className="bg-gradient-to-br from-[#4E4F51]/10 to-[#101013]/10 border-[#4E4F51]/30">
             <CardHeader>
-              <CardTitle className="text-2xl text-[#2E2F38] text-center">Vragen? Laten we Praten!</CardTitle>
-              <CardDescription className="text-[#2E2F38]/80 text-center">
+              <CardTitle className="text-2xl text-[#4E4F51] text-center">Vragen? Laten we Praten!</CardTitle>
+              <CardDescription className="text-[#4E4F51]/80 text-center">
                 Bespreekt u uw evenement liever direct? Ik ben er om te helpen!
               </CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div className="flex flex-col items-center space-y-3">
-                  <Mail className="h-12 w-12 text-[#2E2F38]" />
+                  <Mail className="h-12 w-12 text-[#4E4F51]" />
                   <div>
-                    <h3 className="text-[#2E2F38] font-semibold">E-mail</h3>
-                    <p className="text-[#2E2F38]/80">jaimypynenborg@gmail.com</p>
+                    <h3 className="text-[#4E4F51] font-semibold">E-mail</h3>
+                    <p className="text-[#4E4F51]/80">jaimypynenborg@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex flex-col items-center space-y-3">
-                  <Phone className="h-12 w-12 text-[#2E2F38]" />
+                  <Phone className="h-12 w-12 text-[#4E4F51]" />
                   <div>
-                    <h3 className="text-[#2E2F38] font-semibold">Telefoon</h3>
-                    <p className="text-[#2E2F38]/80">0470432768</p>
+                    <h3 className="text-[#4E4F51] font-semibold">Telefoon</h3>
+                    <p className="text-[#4E4F51]/80">0470432768</p>
                   </div>
                 </div>
                 <div className="flex flex-col items-center space-y-3">
-                  <Clock className="h-12 w-12 text-[#2E2F38]" />
+                  <Clock className="h-12 w-12 text-[#4E4F51]" />
                   <div>
-                    <h3 className="text-[#2E2F38] font-semibold">Responstijd</h3>
-                    <p className="text-[#2E2F38]/80">Binnen 24 uur</p>
+                    <h3 className="text-[#4E4F51] font-semibold">Responstijd</h3>
+                    <p className="text-[#4E4F51]/80">Binnen 24 uur</p>
                   </div>
                 </div>
               </div>
