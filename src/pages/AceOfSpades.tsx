@@ -173,7 +173,7 @@ const AceOfSpades = () => {
                       transform: `translate(-50%,-50%)`,
                       "--tx": `${tx}px`,
                       "--ty": `${ty}px`,
-                    }}
+                    } as React.CSSProperties}
                   />
                 );
               })}
