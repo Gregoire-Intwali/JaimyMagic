@@ -14,7 +14,7 @@ const Index = () => {
       <section className="relative py-20 px-4 text-center">
         
         <div className="absolute inset-0">
-          <div className="w-280 h-full bg-[url('/gallery/sfeerfoto.jpeg')] bg-cover bg-right"></div>
+          <div className="w-full h-full bg-[url('/gallery/index-hero3.png')] bg-cover bg-center"></div>
           <div className="absolute inset-0 w-full h-full bg-black/60"></div>
         </div>
         <div className="relative max-w-4xl mx-auto">

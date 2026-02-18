@@ -134,7 +134,7 @@ const CloseUpMagic = () => {
       {/* Hero Section */}
       <section className="relative py-20 px-4 text-center">
         <div className="absolute inset-0">
-          <div className="w-full h-full bg-[url('/gallery/closeup.jpeg')] bg-cover bg-center md:bg-top"></div>
+          <div className="w-full h-full bg-[url('/gallery/closeup-hero.jpeg')] bg-cover bg-center md:bg-top"></div>
           <div className="absolute inset-0 w-full h-full bg-black/60"></div>
         </div>
         <div className="relative max-w-4xl mx-auto">
