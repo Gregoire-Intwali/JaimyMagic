@@ -14,18 +14,21 @@ const About = () => {
       <section className="py-20 px-4 w-full h-full bg-[url('/gallery/overons-herp.jpeg')]  bg-cover bg-center">
         <div className="max-w-4xl mx-auto text-center">
           <div className="relative mb-8">
-            <div className="w-32 h-32 mx-auto bg-gradient-to-br from-[#4E4F51] to-[#101013] rounded-full flex items-center justify-center mb-6">
-              <img src="/gallery/logo.png" alt="Magic Jaimy Logo" className="h-35 w-35" />
+            <div className="w-30 h-20 mx-auto  flex items-center justify-center mb-6">
+              <img src="/gallery/logo.png" alt="Magic Jaimy Logo" className="h-25 w-30" />
             </div>
+            {/* bg-gradient-to-br from-[#4E4F51] to-[#101013] rounded-full */}
             <div className="absolute inset-0 bg-gradient-to-br from-[#4E4F51]/20 to-[#101013]/20 rounded-full blur-xl scale-150"></div>
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Over de Magie
           </h1>
-          <p className="text-xl text-white /80 mb-8 max-w-2xl mx-auto">
-            Welkom in een wereld waar het onmogelijke mogelijk wordt, en verwondering in elk moment leeft.
-          </p>
+      <p className="text-xl mb-8 max-w-2xl mx-auto">
+  <span className="bg-black/60 text-white/80 px-0.5 py-0.4 rounded-lg">
+    Welkom in een wereld waar het onmogelijke mogelijk wordt, en verwondering in elk moment leeft.
+  </span>
+</p>
         </div>
       </section>
 

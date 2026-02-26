@@ -11,6 +11,7 @@ import Booking from "./pages/Booking";
 import AceOfSpades from "./pages/AceOfSpades";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
+import BeLIEve from "./pages/beLIEve";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/ace-of-spades" element={<AceOfSpades />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/believe" element={<BeLIEve />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

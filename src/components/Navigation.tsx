@@ -13,9 +13,11 @@ const Navigation = () => {
     { path: "/", label: "Home" },
     { path: "/close-up-magic", label: "Close-up Magie" },
     { path: "/parlour-magic", label: "Parlour Magie" },
-    { path: "/gallery", label: "Galerij" },
+   { path: "/believe", label: "BeLIEve" }, 
+   { path: "/gallery", label: "Galerij" },
     { path: "/booking", label: "Boeken" },
     { path: "/about", label: "Over Ons" },
+    
   ];
 
   return (
@@ -23,7 +25,7 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-2 group">
-            <img src="/gallery/logo.png" alt="Magic Jaimy Logo" className="h-14 w-14" />
+            <img src="/gallery/logo.png" alt="Magic Jaimy Logo" className="h-24 w-25" />
           </Link>
 
           {/* Desktop Navigation */}
