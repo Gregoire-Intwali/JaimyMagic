@@ -193,7 +193,8 @@ const BeLIEve = () => {
                   <div>
                     <h3 className="text-xl text-[#101013] font-semibold">Misleiding van Aandacht</h3>
                     <p className="text-[#4E4F51]/80">
-                      Wat je ziet is onmogelijk. Wat je mist is essentieel.
+                      Wat echt lijkt, blijkt misleiding.
+Wat onmogelijk is, gebeurt recht voor je ogen.
                     </p>
                   </div>
                 </div>
