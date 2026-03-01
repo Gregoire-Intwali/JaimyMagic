@@ -36,7 +36,7 @@ const Gallery = () => {
       title: "Mentale Magie",
       description: "Ongelooflijke mentale kunsten",
       category: "Close-up Magie",
-      src: "/gallery/crazytrick.mp4"
+      src: "/gallery/firebook.mp4"
 
     },
     {
@@ -44,7 +44,7 @@ const Gallery = () => {
       title: "Privéfeest",
       description: "Magische momenten op een privéfeest",
       category: "Evenementen",
-      src: "/gallery/firebook.mp4"
+      src: "/gallery/prive.mp4"
     },
     {
       type: "video",

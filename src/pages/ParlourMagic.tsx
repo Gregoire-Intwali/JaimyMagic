@@ -15,21 +15,37 @@ const galleryImages = [
   { src: "/gallery/parlour-7.jpeg", alt: "Parlour magie moment 7" },
   { src: "/gallery/parlour-8.jpeg", alt: "Parlour magie moment 8" },
   { src: "/gallery/parlour-9.jpeg", alt: "Parlour magie moment 9" },
+  { src: "/gallery/parlour-10.jpeg", alt: "Parlour magie moment 10" },
+  { src: "/gallery/parlour-11.jpeg", alt: "Parlour magie moment 11" },
+  { src: "/gallery/parlour-12.jpeg", alt: "Parlour magie moment 12" },
+  { src: "/gallery/parlour-13.jpeg", alt: "Parlour magie moment 13" },
+  { src: "/gallery/parlour-14.jpeg", alt: "Parlour magie moment 14" },
+  { src: "/gallery/parlour-15.jpeg", alt: "Parlour magie moment 15" },
 ];
 
 // Grid: 4 kolommen x 4 rijen — andere layout dan CloseUpMagic
 // [colStart, colEnd, rowStart, rowEnd]
-const gridSpans = [
-  [1, 2, 1, 3], // 1 – hoog links
-  [2, 4, 1, 2], // 2 – breed bovenaan
-  [4, 5, 1, 2], // 3
-  [2, 3, 2, 3], // 4
-  [3, 5, 2, 3], // 5 – breed midden-rechts
-  [1, 3, 3, 4], // 6 – breed onder-links
-  [3, 4, 3, 4], // 7
-  [4, 5, 3, 4], // 8
-  [1, 5, 4, 5], // 9 – breed balk onderaan
+ const gridSpans = [
+  [1, 2, 1, 2], // 1
+  [2, 3, 1, 2], // 2
+  [3, 4, 1, 2], // 3
+  [4, 5, 1, 2], // 4
+
+  [1, 2, 2, 3], // 5
+  [2, 3, 2, 3], // 6
+  [3, 4, 2, 3], // 7
+  [4, 5, 2, 3], // 8
+
+  [1, 2, 3, 4], // 9
+  [2, 3, 3, 4], // 10
+  [3, 4, 3, 4], // 11
+  [4, 5, 3, 4], // 12
+
+  [1, 2, 4, 5], // 13
+  [2, 3, 4, 5], // 14
+  [3, 4, 4, 5], // 15
 ];
+
 
 const ParlourMagic = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
