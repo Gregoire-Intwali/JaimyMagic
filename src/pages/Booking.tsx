@@ -214,7 +214,8 @@ const Booking = () => {
                       <SelectContent className="bg-[white] border-[#4E4F51]/30">
                         <SelectItem value="close-up">Close-up Magie</SelectItem>
                         <SelectItem value="parlour">Parlour Magie</SelectItem>
-                        <SelectItem value="both">Beide (indien tijd toelaat)</SelectItem>
+                        <SelectItem value="beLIEve">BeLIEve Show</SelectItem>
+                        <SelectItem value="everything">Alles (indien tijd toelaat)</SelectItem>
                         <SelectItem value="unsure">Niet zeker - laten we bespreken</SelectItem>
                       </SelectContent>
                     </Select>
