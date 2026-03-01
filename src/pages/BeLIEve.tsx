@@ -104,7 +104,7 @@ const BeLIEve = () => {
 
       <p>
         <strong>BeLIEve</strong> is geen show over trucs.
-        Het is een ervaring over beïnvloeding, afleiding en geloof.
+        Het is een ervaring over beïnvloeding, afleiding en vertrouwen.
         Over hoe eenvoudig perceptie kan worden gemanipuleerd —
         en waarom we daar vaak vrijwillig in meegaan.
       </p>
@@ -148,7 +148,7 @@ const BeLIEve = () => {
                 <CardTitle className="text-[#4E4F51]">Show Duur</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-[#4E4F51]/80">60 minuten interactieve voorstelling</p>
+                <p className="text-[#4E4F51]/80">45 minuten interactieve voorstelling</p>
               </CardContent>
             </Card>
 

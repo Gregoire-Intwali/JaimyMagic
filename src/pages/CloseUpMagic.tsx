@@ -161,7 +161,7 @@ const CloseUpMagic = () => {
                 <CardTitle className="text-[#4E4F51]">Duur</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-[#4E4F51]/80">1-3 uur mingel magie</p>
+                <p className="text-[#4E4F51]/80">1-3 uur tafel goochelen</p>
               </CardContent>
             </Card>
 
