@@ -11,7 +11,7 @@ import Booking from "./pages/Booking";
 import AceOfSpades from "./pages/AceOfSpades";
 import About from "./pages/About";
 import Gallery from "./pages/Gallery";
-import BeLIEve from "./pages/beLIEve";
+import BeLIEve from "./pages/BeLIEve";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
