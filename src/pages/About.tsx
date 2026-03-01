@@ -18,7 +18,7 @@ const About = () => {
               <img src="/gallery/logo.png" alt="Magic Jaimy Logo" className="h-25 w-30" />
             </div>
             {/* bg-gradient-to-br from-[#4E4F51] to-[#101013] rounded-full */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#4E4F51]/20 to-[#101013]/20 rounded-full blur-xl scale-150"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-[#4E4F51]/20 to-[#101013]/20 rounded-full blur-xl scale-100"></div>
           </div>
           
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
