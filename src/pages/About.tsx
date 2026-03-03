@@ -21,14 +21,7 @@ const About = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-[#4E4F51]/20 to-[#101013]/20 rounded-full blur-xl scale-100"></div>
           </div>
           
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-            Over de Magie
-          </h1>
-      <p className="text-xl mb-8 max-w-2xl mx-auto">
-  <span className="bg-black/60 text-white/80 px-0.5 py-0.4 rounded-lg">
-    Welkom in een wereld waar het onmogelijke mogelijk wordt, en verwondering in elk moment leeft.
-  </span>
-</p>
+          
         </div>
       </section>
 
