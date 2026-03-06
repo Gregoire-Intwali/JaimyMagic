@@ -11,7 +11,7 @@ const About = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="py-20 px-4 w-full h-full bg-[url('/gallery/overons-herp.jpeg')]  bg-cover bg-center">
+      <section className="py-24 px-4 w-full h-full bg-[url('/gallery/overons-herp.jpeg')]  bg-cover bg-center">
         <div className="max-w-4xl mx-auto text-center">
           <div className="relative mb-8">
             <div className="w-30 h-20 mx-auto  flex items-center justify-center mb-6">
