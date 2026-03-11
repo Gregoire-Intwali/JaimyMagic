@@ -13,6 +13,7 @@ import About from "./pages/About";
 import Gallery from "./pages/Gallery";
 import BeLIEve from "./pages/BeLIEve";
 import NotFound from "./pages/NotFound";
+import { Analytics } from "@vercel/analytics/react";
 
 const queryClient = new QueryClient();
 
@@ -34,8 +35,10 @@ const App = () => (
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
+      <Analytics />
     </TooltipProvider>
   </QueryClientProvider>
+
 );
 
 export default App;
