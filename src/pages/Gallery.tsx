@@ -27,14 +27,18 @@ const Gallery = () => {
   }, []);
   const galleryItems = [
     { type: "image", src: "/gallery/gallery-1.jpeg" },
-    { type: "image", src: "/gallery/gallery-2.jpeg" },
+    { type: "image", src: "/gallery/gallery-2.jpeg" },{ type: "image", src: "/gallery/gallery-19.jpeg" },
     { type: "video", src: "/gallery/video-3.mp4" },
+    { type: "image", src: "/gallery/gallery-18.jpeg" },
     { type: "image", src: "/gallery/gallery-4.jpeg" },
     { type: "image", src: "/gallery/gallery-6.jpeg" },
     { type: "image", src: "/gallery/gallery-7.jpeg" },
     { type: "image", src: "/gallery/gallery-8.jpeg" },
     { type: "video", src: "/gallery/video-2.mp4" },
+    
+
     { type: "image", src: "/gallery/gallery-10.jpeg" },
+    
     { type: "image", src: "/gallery/gallery-11.jpeg" },
     { type: "image", src: "/gallery/gallery-12.jpeg" },
     { type: "image", src: "/gallery/gallery-13.jpeg" },
@@ -42,6 +46,9 @@ const Gallery = () => {
     { type: "video", src: "/gallery/video-1.mp4" },
     { type: "image", src: "/gallery/gallery-3.jpeg" },
     { type: "image", src: "/gallery/gallery-9.jpeg" },
+    { type: "image", src: "/gallery/gallery-16.jpeg" },
+    { type: "image", src: "/gallery/gallery-17.jpeg" },  
+    { type: "image", src: "/gallery/gallery-20.jpeg" }
   ];
 
   return (

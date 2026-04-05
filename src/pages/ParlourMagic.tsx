@@ -21,29 +21,16 @@ const galleryImages = [
   { src: "/gallery/parlour-13.jpeg", alt: "Parlour magie moment 13" },
   { src: "/gallery/parlour-14.jpeg", alt: "Parlour magie moment 14" },
   { src: "/gallery/parlour-15.jpeg", alt: "Parlour magie moment 15" },
+  {src: "/gallery/gallery-19.jpeg", alt: "Parlour magie moment 16" },
 ];
 
 // Grid: 4 kolommen x 4 rijen — andere layout dan CloseUpMagic
 // [colStart, colEnd, rowStart, rowEnd]
  const gridSpans = [
-  [1, 2, 1, 2], // 1
-  [2, 3, 1, 2], // 2
-  [3, 4, 1, 2], // 3
-  [4, 5, 1, 2], // 4
-
-  [1, 2, 2, 3], // 5
-  [2, 3, 2, 3], // 6
-  [3, 4, 2, 3], // 7
-  [4, 5, 2, 3], // 8
-
-  [1, 2, 3, 4], // 9
-  [2, 3, 3, 4], // 10
-  [3, 4, 3, 4], // 11
-  [4, 5, 3, 4], // 12
-
-  [1, 2, 4, 5], // 13
-  [2, 3, 4, 5], // 14
-  [3, 4, 4, 5], // 15
+ [1, 2, 1, 2], [2, 3, 1, 2], [3, 4, 1, 2], [4, 5, 1, 2],
+  [1, 2, 2, 3], [2, 3, 2, 3], [3, 4, 2, 3], [4, 5, 2, 3],
+  [1, 2, 3, 4], [2, 3, 3, 4], [3, 4, 3, 4], [4, 5, 3, 4],
+  [1, 2, 4, 5], [2, 3, 4, 5], [3, 4, 4, 5], [4, 5, 4, 5],
 ];
 
 
