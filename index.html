@@ -1,31 +1,65 @@
-
 <!DOCTYPE html>
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Magic Jaimy - Professionele Close-up & Salon Magie Shows</title>
-    <meta name="description" content="Professionele goochelaar gespecialiseerd in close-up en salon magie. Boek onvergetelijke magische ervaringen voor bedrijfsevenementen, privéfeesten en speciale gelegenheden." />
+
+    <!-- Title -->
+    <title>Magic Jaimy - Goochelaar voor Close-up & Salon Magie in België</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Goochelaar Magic Jaimy voor close-up en salon magie in België. Perfect voor events, bedrijfsfeesten en privéshows." />
     <meta name="author" content="Magic Jaimy" />
 
+    <!-- Open Graph -->
     <meta property="og:title" content="Magic Jaimy - Professionele Magie Shows" />
     <meta property="og:description" content="Ervaar ongelooflijke close-up en salon magie voorstellingen die uw gasten zullen verbazen" />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://magicjaimy.be" />
 
-
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-  </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-B1L9GS39DS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-B1L9GS39DS');
-</script>
+    <!-- GEO SEO -->
+    <meta name="geo.region" content="BE" />
+    <meta name="geo.placename" content="Belgium" />
+    <meta name="geo.position" content="50.8503;4.3517" />
+    <meta name="ICBM" content="50.8503, 4.3517" />
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Magic Jaimy",
+        "jobTitle": "Goochelaar",
+        "url": "https://magicjaimy.be",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BE"
+        },
+        "areaServed": "Belgium"
+      }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B1L9GS39DS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-B1L9GS39DS');
+    </script>
+  </head>
+
   <body>
+    <!-- Hidden H1 for SEO (fallback for crawlers) -->
+    <h1 style="display:none;">
+      Goochelaar Magic Jaimy - Close-up & Salon Magie in België
+    </h1>
+
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

@@ -139,6 +139,9 @@ const CloseUpMagic = () => {
         </div>
         <div className="relative max-w-4xl mx-auto">
           <Users className="h-16 w-16 text-[white] mx-auto mb-6 animate-pulse" />
+          <title>Close-up Goochelaar België | Magic Jaimy</title>
+          <meta name="description" content="Close-up goochelaar in België voor events en diners. Magie van dichtbij, recht onder de neus van je gasten." />
+
           <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
             Close-up Magie
           </h1>
