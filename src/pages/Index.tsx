@@ -36,9 +36,9 @@ const ClientCarousel = () => {
           <span className="text-[#4E4F51]/60 text-sm animate-pulse" style={{ animationDelay: "0.3s" }}>✦</span>
           <span className="text-[#4E4F51]/40 text-xl animate-pulse" style={{ animationDelay: "0.6s" }}>✦</span>
         </div>
-        <h2 className="text-4xl font-bold text-[#4E4F51] mb-3">
+        <h3 className="text-4xl font-bold text-[#4E4F51] mb-3">
           Zij Geloofden In Magie
-        </h2>
+        </h3>
         <p className="text-[#4E4F51]/60 text-lg">
           Vertrouwd door toonaangevende bedrijven en organisaties
         </p>
@@ -133,10 +133,10 @@ const Index = () => {
         <div className="relative max-w-4xl mx-auto">
           <div className="mb-8">
             <Sparkles className="h-16 w-16 text-[white] mx-auto mb-4 animate-pulse" />
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+            <h2 className="text-5xl md:text-7xl font-bold text-white mb-6">
               Ervaar Echte
               <span className="text-white"> Magie</span>
-            </h1>
+            </h2>
             <p className="text-xl md:text-2xl text-white mb-8 max-w-2xl mx-auto">
               Professionele close-up en parlour goochel voorstellingen die uw
               gasten betoveren
