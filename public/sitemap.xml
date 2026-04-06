@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://magicjaimy.be/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://magicjaimy.be/close-up-magic</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://magicjaimy.be/parlour-magic</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://magicjaimy.be/booking</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://magicjaimy.be/ace-of-spades</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://magicjaimy.be/about</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://magicjaimy.be/gallery</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://magicjaimy.be/believe</loc>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
