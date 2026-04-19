@@ -2,6 +2,14 @@ import Navigation from "@/components/Navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+
 import { Link } from "react-router-dom";
 import { Camera, Play, Star, Calendar, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useState , useCallback} from "react";
@@ -249,36 +257,79 @@ const Gallery = () => {
         </DialogContent>
       </Dialog>
 
-      {/* Testimonials */}
-      <section className="py-16 px-4 bg-gradient-to-r from-[#4E4F51]/10 to-[#101013]/15">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-[#4E4F51] mb-12">Wat Mensen Zeggen</h2>
-          <div className="grid md:grid-cols-2 gap-8">
+  {/* Testimonials */}
+<section className="py-8 px-4 bg-gradient-to-r from-[#4E4F51]/10 to-[#101013]/15">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-4xl font-bold text-center text-[#4E4F51] mb-12">
+      Wat Mensen Zeggen
+    </h2>
+
+    <Carousel className="w-full">
+      <CarouselContent>
+
+        {[
+          {
+            text: `Magic Jaimy is meer dan een goochelaar; hij is een sfeermaker. Of het nu gaat om een intieme setting aan tafel (close-up magie) of een grote podiumact, hij weet de aandacht vast te houden van de eerste tot de laatste seconde.
+
+Mijn advies? Twijfel niet. Als je wilt dat je gasten nog jaren napraten over je feest, dan is Jaimy de man die je moet hebben.`,
+            name: "Michael Willemen",
+          },
+          {
+            text: `Magic Jaimy heeft al meerdere keren opgetreden voor onze familie en weet ons telkens opnieuw te verrassen. Zijn shows blijven origineel, met telkens nieuwe en creatieve acts die zowel jong als oud boeien.
+
+Daarnaast heeft hij een uitstekende klik met kinderen. Hij betrekt hen actief, stelt hen op hun gemak en laat hen echt genieten van de magie. Het is ongelofelijk om te zien hoe hij hen laat lachen, verwonderen en zelfs een beetje laat geloven in echte magie.
+
+Een absolute aanrader voor elk evenement! Een bijzonder getalenteerde en professionele entertainer.`,
+            name: "Dorine Baksteen",
+          },
+          {
+            text: `Magic Jaimy was een absolute topper op ons verjaardagsfeestje! Iedereen hing aan zijn lippen en werd continu verrast door zijn trucs. Hij bracht veel humor en interactie, waardoor de sfeer meteen geweldig zat. Echt een aanrader als je je feest net dat beetje extra magie wilt geven!`,
+            name: "Marieke Baksteen",
+          },
+          {
+            text: `Zijn trucs zijn niet alleen indrukwekkend, maar ook origineel en verrassend.
+Naast zijn talent als goochelaar is hij ook gewoon een ontzettend vriendelijk en professioneel persoon.`,
+            name: "Eline Baksteen",
+          },
+          {
+            text: `Iemand met duidelijk veel passie voor goochelen. Altijd leuk om te zien hoe hij met zijn vak bezig is. Zeker de moeite waard om eens te boeken!`,
+            name: "Anke Baksteen",
+          },
+          {
+            text: `Bij ons op een feestje geweest. Was super leuk. Heel gevarieerd en past zich aan aan het publiek. Een aanrader voor wie een fantastisch magisch avond wil!`,
+            name: "Kristof De Bruyn",
+          },
+        ].map((review, index) => (
+          <CarouselItem key={index} className="md:basis-1/1">
             <Card className="bg-white border-[#4E4F51]/30">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-1 mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-[#4E4F51] fill-current" />)}
+              <CardContent className="p-8 text-center">
+                
+                <div className="flex justify-center space-x-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-5 w-5 text-[#4E4F51] fill-current" />
+                  ))}
                 </div>
-                <p className="text-[#4E4F51]/80 mb-4 italic">
-                  "Ongelooflijk! Onze gasten waren volledig betoverd. De close-up magie was het perfecte gesprek van de avond."
+
+                <p className="text-lg text-[#4E4F51]/80 mb-6 italic">
+                  "{review.text}"
                 </p>
-                <div className="text-[#4E4F51] font-semibold">Sarah van den Berg - Bedrijfsevenement</div>
+
+                <div className="text-[#4E4F51] font-semibold">
+                  {review.name}
+                </div>
+
               </CardContent>
             </Card>
-            <Card className="bg-white border-[#4E4F51]/30">
-              <CardContent className="p-6">
-                <div className="flex items-center space-x-1 mb-4">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-5 w-5 text-[#4E4F51] fill-current" />)}
-                </div>
-                <p className="text-[#4E4F51]/80 mb-4 italic">
-                  "De parlour magie show was fenomenaal! Zowel kinderen als volwassenen waren volledig geboeid. Professioneel en echt magisch!"
-                </p>
-                <div className="text-[#4E4F51] font-semibold">Michael Janssen - Verjaardagsfeest</div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+          </CarouselItem>
+        ))}
+
+      </CarouselContent>
+
+      <CarouselPrevious />
+      <CarouselNext />
+    </Carousel>
+  </div>
+</section>
 
       {/* CTA */}
       <section className="py-16 px-4">
