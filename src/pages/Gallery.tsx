@@ -128,7 +128,7 @@ Daarnaast is hij ook een zeer vriendelijk en professioneel persoon.`,
             {galleryItems.map((item, index) => (
               <div
                 key={index}
-                className="rounded-lg overflow-hidden cursor-pointer"
+                className="rounded-lg overflow-hidden cursor-pointer aspect-square"
                 onClick={() =>
                   item.type === "video"
                     ? setSelectedVideo(item.src)
@@ -136,9 +136,9 @@ Daarnaast is hij ook een zeer vriendelijk en professioneel persoon.`,
                 }
               >
                 {item.type === "image" ? (
-                  <img src={item.src} className="w-full h-auto" />
+                  <img src={item.src} className="w-full h-full object-cover" />
                 ) : (
-                  <video src={item.src} muted autoPlay loop className="w-full" />
+                  <video src={item.src} muted autoPlay loop className="w-full h-full object-cover" />
                 )}
               </div>
             ))}
@@ -153,56 +153,59 @@ Daarnaast is hij ook een zeer vriendelijk en professioneel persoon.`,
             Wat Mensen Zeggen
           </h2>
 
-          <Carousel opts={{ align: "start", loop: true }}>
-            <CarouselContent className="-ml-2">
-              {reviews.map((review, index) => (
-                <CarouselItem key={index} className="pl-2 basis-full">
-                  <Card className="bg-white border-[#4E4F51]/30 min-h-[260px] sm:min-h-[320px] flex items-center">
-                    <CardContent
-  className={`px-5 sm:px-8 text-center flex flex-col justify-center ${getCardSpacing(review.text)}`}
->
-                      <div className="flex justify-center mb-3 sm:mb-4">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-[#4E4F51] fill-current" />
-                        ))}
-                      </div>
+          <div className="relative px-10 sm:px-14">
+            <Carousel opts={{ align: "start", loop: true }}>
+              <CarouselContent className="-ml-2">
+                {reviews.map((review, index) => (
+                  <CarouselItem key={index} className="pl-2 basis-full">
+                    <Card className="bg-white border-[#4E4F51]/30 min-h-[260px] sm:min-h-[320px] flex items-center">
+                      <CardContent
+                        className={`w-full px-5 sm:px-8 text-center ${getCardSpacing(review.text)}`}
+                      >
+                        <div className="flex justify-center mb-3 sm:mb-4">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-[#4E4F51] fill-current" />
+                          ))}
+                        </div>
 
-                      <p className="text-sm sm:text-lg leading-relaxed italic text-[#4E4F51]/80 mb-4 sm:mb-6 whitespace-pre-line">
-                        {review.text}
-                      </p>
+                        <p className="text-sm sm:text-lg leading-relaxed italic text-[#4E4F51]/80 mb-4 sm:mb-6 whitespace-pre-line">
+                          {review.text}
+                        </p>
 
-                      <div className="text-sm sm:text-base font-semibold text-[#4E4F51]">
-                        {review.name}
-                      </div>
-                    </CardContent>
-                  </Card>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
+                        <div className="text-sm sm:text-base font-semibold text-[#4E4F51]">
+                          {review.name}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
 
-            {/* arrows alleen desktop */}
-            <div className="hidden sm:block">
-              <CarouselPrevious />
-              <CarouselNext />
-            </div>
-          </Carousel>
+              <CarouselPrevious className="left-0" />
+              <CarouselNext className="right-0" />
+            </Carousel>
+          </div>
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-16 px-4 text-center">
-        <Calendar className="h-12 w-12 mx-auto mb-6 text-[#4E4F51]" />
-        <h2 className="text-2xl sm:text-4xl font-bold mb-6 text-[#4E4F51]">
-          Klaar Voor Uw Eigen Magische Ervaring?
-        </h2>
-
-        <div className="flex flex-col sm:flex-row gap-3 justify-center">
-          <Button asChild>
-            <Link to="/booking">Boek Uw Show</Link>
-          </Button>
-          <Button variant="outline" asChild>
-            <Link to="/about">Meer Over Ons</Link>
-          </Button>
+       <section className="py-16 ">
+        <div className="max-w-4xl mx-auto text-center">
+          <Calendar className="h-16 w-16 text-[#4E4F51] mx-auto mb-6" />
+          <h2 className="text-4xl font-bold text-[#4E4F51] mb-6">
+            Klaar om de Magie te Ervaren?
+          </h2>
+          <p className="text-xl text-[#4E4F51]/80 mb-8">
+            Laten we een onvergetelijke ervaring creëren voor u en uw gasten
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-[#4E4F51] hover:bg-[#101013] text-[white] font-bold px-8 py-3 text-lg">
+              <Link to="/booking">Boek Uw Show</Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="border-[#4E4F51] text-[#4E4F51] hover:bg-[#4E4F51] hover:text-[white] px-8 py-3 text-lg">
+              <Link to="/">Ontdek Services</Link>
+            </Button>
+          </div>
         </div>
       </section>
     </div>

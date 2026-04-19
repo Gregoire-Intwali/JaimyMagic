@@ -4,8 +4,55 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sparkles, Award, Heart, Users, Calendar, Star } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const About = () => {
+    const getCardSpacing = (text) => {
+  const length = text.length;
+
+  if (length > 400) return "py-6 sm:py-10"; // long review
+  if (length > 200) return "py-6 sm:py-8";  // medium
+  return "py-6 sm:py-6";                   // short
+};
+   const reviews = [
+    {
+      text: `Magic Jaimy is meer dan een goochelaar; hij is een sfeermaker. Of het nu gaat om een intieme setting aan tafel (close-up magie) of een grote podiumact, hij weet de aandacht vast te houden van de eerste tot de laatste seconde.
+
+Mijn advies? Twijfel niet. Als je wilt dat je gasten nog jaren napraten over je feest, dan is Jaimy de man die je moet hebben.`,
+      name: "Michael W.",
+    },
+    {
+      text: `Magic Jaimy heeft al meerdere keren opgetreden voor onze familie en weet ons telkens opnieuw te verrassen. Zijn shows blijven origineel, met telkens nieuwe en creatieve acts die zowel jong als oud boeien.
+
+Daarnaast heeft hij een uitstekende klik met kinderen. Hij betrekt hen actief, stelt hen op hun gemak en laat hen echt genieten van de magie. Het is ongelofelijk om te zien hoe hij hen laat lachen, verwonderen en zelfs een beetje laat geloven in echte magie.
+
+Een absolute aanrader voor elk evenement!`,
+      name: "Dorine B.",
+    },
+    {
+      text: `Magic Jaimy was een absolute topper op ons verjaardagsfeestje! Iedereen hing aan zijn lippen en werd continu verrast.`,
+      name: "Marieke B.",
+    },
+    {
+      text: `Zijn trucs zijn niet alleen indrukwekkend, maar ook origineel en verrassend.
+Daarnaast is hij ook een zeer vriendelijk en professioneel persoon.`,
+      name: "Eline B.",
+    },
+    {
+      text: `Iemand met duidelijk veel passie voor goochelen. Zeker de moeite waard!`,
+      name: "Anke B.",
+    },
+    {
+      text: `Heel gevarieerd en past zich perfect aan aan het publiek. Een aanrader!`,
+      name: "Kristof D.B.",
+    },
+  ];
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#E3E5E6] via-[#E3E5E6] to-[#E2E3E5]">
       <Navigation />
@@ -125,53 +172,50 @@ verwonderde blikken.
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-16 px-4">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-center text-[#4E4F51] mb-12">
+       {/* TESTIMONIALS (FIXED) */}
+      <section className="py-10 sm:py-16 px-4 bg-gradient-to-r from-[#4E4F51]/10 to-[#101013]/15">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl sm:text-4xl font-bold text-center text-[#4E4F51] mb-8 sm:mb-12">
             Wat Mensen Zeggen
           </h2>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="bg-gradient-to-br from-[#4E4F51]/10 to-[#101013]/10 border-[#4E4F51]/30">
-              <CardHeader>
-                <div className="flex items-center space-x-1 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-[#4E4F51] fill-current" />
-                  ))}
-                </div>
-                <CardTitle className="text-[#4E4F51]">Sarah M. - Bedrijfsevenement</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-[#4E4F51]/80 italic">
-                  "Absoluut ongelooflijk! Ons team was volledig betoverd. De close-up magie tijdens ons 
-                  netwerkevenement was de perfecte ijsbreker. Iedereen praat er weken later nog steeds over!"
-                </p>
-              </CardContent>
-            </Card>
 
-            <Card className="bg-gradient-to-br from-[#4E4F51]/10 to-[#101013]/10 border-[#4E4F51]/30">
-              <CardHeader>
-                <div className="flex items-center space-x-1 mb-2">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-[#4E4F51] fill-current" />
-                  ))}
-                </div>
-                <CardTitle className="text-[#4E4F51]">Michael R. - Verjaardagsfeest</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-[#4E4F51]/80 italic">
-                  "De salon magie show was fenomenaal! Zowel kinderen als volwassenen waren volledig geboeid. 
-                  Professioneel, entertainend en echt magisch. Zeer aan te bevelen!"
-                </p>
-              </CardContent>
-            </Card>
+          <div className="relative px-10 sm:px-14">
+            <Carousel opts={{ align: "start", loop: true }}>
+              <CarouselContent className="-ml-2">
+                {reviews.map((review, index) => (
+                  <CarouselItem key={index} className="pl-2 basis-full">
+                    <Card className="bg-white border-[#4E4F51]/30 min-h-[260px] sm:min-h-[320px] flex items-center">
+                      <CardContent
+                        className={`w-full px-5 sm:px-8 text-center ${getCardSpacing(review.text)}`}
+                      >
+                        <div className="flex justify-center mb-3 sm:mb-4">
+                          {[...Array(5)].map((_, i) => (
+                            <Star key={i} className="h-4 w-4 sm:h-5 sm:w-5 text-[#4E4F51] fill-current" />
+                          ))}
+                        </div>
+
+                        <p className="text-sm sm:text-lg leading-relaxed italic text-[#4E4F51]/80 mb-4 sm:mb-6 whitespace-pre-line">
+                          {review.text}
+                        </p>
+
+                        <div className="text-sm sm:text-base font-semibold text-[#4E4F51]">
+                          {review.name}
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+
+              <CarouselPrevious className="left-0" />
+              <CarouselNext className="right-0" />
+            </Carousel>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-[#4E4F51]/10 to-[#101013]/15">
+      <section className="py-16 px-4 ">
         <div className="max-w-4xl mx-auto text-center">
           <Calendar className="h-16 w-16 text-[#4E4F51] mx-auto mb-6" />
           <h2 className="text-4xl font-bold text-[#4E4F51] mb-6">
